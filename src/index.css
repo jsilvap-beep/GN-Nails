@@ -1,0 +1,75 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  }
+  h1, h2, h3, .font-display {
+    font-family: 'Cormorant Garamond', 'Playfair Display', Georgia, serif;
+  }
+  .font-brand {
+    font-family: 'Outfit', 'Plus Jakarta Sans', sans-serif;
+  }
+}
+
+/* Custom neon lines and 3D glowing effects */
+@keyframes neonPulse {
+  0%, 100% {
+    box-shadow: 0 0 15px rgba(212, 175, 55, 0.35), inset 0 0 10px rgba(212, 175, 55, 0.15);
+    border-color: rgba(212, 175, 55, 0.6);
+  }
+  50% {
+    box-shadow: 0 0 25px rgba(212, 175, 55, 0.65), 0 0 45px rgba(255, 230, 180, 0.3), inset 0 0 15px rgba(212, 175, 55, 0.3);
+    border-color: rgba(226, 192, 85, 0.9);
+  }
+}
+
+@keyframes neonRosePulse {
+  0%, 100% {
+    box-shadow: 0 0 14px rgba(244, 162, 145, 0.3), inset 0 0 8px rgba(244, 162, 145, 0.15);
+    border-color: rgba(244, 162, 145, 0.5);
+  }
+  50% {
+    box-shadow: 0 0 24px rgba(244, 162, 145, 0.6), 0 0 40px rgba(254, 215, 215, 0.35), inset 0 0 12px rgba(244, 162, 145, 0.25);
+    border-color: rgba(250, 180, 165, 0.85);
+  }
+}
+
+.neon-gold-border {
+  animation: neonPulse 3.5s ease-in-out infinite;
+}
+
+.neon-rose-border {
+  animation: neonRosePulse 4s ease-in-out infinite;
+}
+
+/* Smooth custom scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #F4EFEA;
+}
+::-webkit-scrollbar-thumb {
+  background: #D8CEBE;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #BFAFA0;
+}
+
+/* Glassmorphism surfaces */
+.glass-beige {
+  background: rgba(255, 253, 249, 0.82);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(228, 218, 204, 0.65);
+}
+
+.glass-dark-beige {
+  background: rgba(244, 238, 229, 0.92);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border: 1px solid rgba(212, 198, 180, 0.5);
+}

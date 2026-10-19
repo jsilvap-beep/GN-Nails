@@ -1,0 +1,6 @@
+{
+  "name": "Gabee Nail Art - Tendencia 2026",
+  "description": "Tus Manos en las Mejores Manos · Gabee Nail Art: Agendamiento de citas, promociones en tendencia 2026, servicio personalizado, pagos Yape/Plin y sincronización con Google Sheets.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
